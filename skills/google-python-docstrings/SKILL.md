@@ -101,7 +101,7 @@ Do not use this skill when you are:
 - Show expected output when it helps clarify behavior.
 - Keep style consistent within a file (summary tone, indentation, section order).
 
-## Reference Documentation
+## Reference Files
 
 Detailed information available in `references/`:
 
