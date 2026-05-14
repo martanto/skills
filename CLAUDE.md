@@ -39,6 +39,18 @@ metadata:
 
 The `description` field is critical: it drives automatic skill invocation. Write it as a clear trigger condition (e.g., "Use whenever the user asks to add or improve docstrings...").
 
+## Required Sections in SKILL.md
+
+Every `SKILL.md` must include these sections in order:
+
+1. **Title with one-sentence description** — A top-level heading naming the skill followed by a single sentence explaining what it does.
+2. **Overview** — Brief summary of the skill's capabilities and key concepts.
+3. **When to Use This Skill** — Must include at least one explicit trigger sentence. Example: "Invoke this skill when the user asks to write docstrings in Google docstring style." Follow with a bulleted list of use cases and a "Do not use" line for out-of-scope scenarios.
+4. **Reference Files** — List of supporting files available in `references/`, formatted as a bulleted list. Example:
+   - `trace.md`: Description of what it covers.
+   - `stream.md`: Description of what it covers.
+5. **Additional Resources** *(optional)* — Links to external documentation, tutorials, or APIs relevant to the skill.
+
 ## Adding a New Skill
 
 To create a new skill, run the skill creator by invoking:

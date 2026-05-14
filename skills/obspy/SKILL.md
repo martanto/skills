@@ -12,11 +12,27 @@ Write correct, idiomatic Python code using [ObsPy](https://docs.obspy.org/) — 
 ## Overview
 
 ObsPy provides:
+
 - **Core data types**: `Stream`, `Trace`, `Inventory`, `Catalog`, `Event`, `UTCDateTime`
 - **File I/O**: read/write 25+ seismic formats (MiniSEED, SAC, SEG-Y, GSE2, StationXML, QuakeML, …)
 - **Web clients**: FDSN, IRIS, SeedLink, Earthworm, Syngine
 - **Signal processing**: filtering, tapering, resampling, instrument correction, triggering, beamforming
 - **Visualization**: waveform plots, spectrograms, beachballs, ray paths
+
+## When to Use This Skill
+
+Use this skill when the user is:
+
+- Asking to use ObsPy or run seismic-related data processing
+- Reading, writing, or converting seismic waveform files
+- Querying FDSN/IRIS/GEOFON web services for waveforms, stations, or events
+- Filtering, resampling, tapering, or detrending seismograms
+- Removing instrument response or simulating seismometers
+- Working with `Stream`, `Trace`, `Inventory`, `Catalog`, or `UTCDateTime` objects
+- Computing travel times with TauP
+- Plotting waveforms, spectrograms, or beachballs
+
+Do not use this skill when the user is working with non-seismological geophysical data (GPS, gravity, MT) or when they need a general signal-processing library without seismological context.
 
 ## Requirements
 
@@ -32,16 +48,19 @@ ObsPy provides:
 ## Installation
 
 **uv** (recommended):
+
 ```bash
 uv add obspy
 ```
 
 **pip**:
+
 ```bash
 pip install obspy
 ```
 
 **conda** (conda-forge channel):
+
 ```bash
 conda install -c conda-forge obspy
 ```
@@ -70,19 +89,6 @@ st.filter("bandpass", freqmin=0.05, freqmax=0.5, zerophase=True)
 st.plot()
 ```
 
-## When to Use This Skill
-
-Use this skill when the user is:
-- Reading, writing, or converting seismic waveform files
-- Querying FDSN/IRIS/GEOFON web services for waveforms, stations, or events
-- Filtering, resampling, tapering, or detrending seismograms
-- Removing instrument response or simulating seismometers
-- Working with `Stream`, `Trace`, `Inventory`, `Catalog`, or `UTCDateTime` objects
-- Computing travel times with TauP
-- Plotting waveforms, spectrograms, or beachballs
-
-Do not use this skill when the user is working with non-seismological geophysical data (GPS, gravity, MT) or when they need a general signal-processing library without seismological context.
-
 ## Progressive Disclosure
 
 - Start with this file for installation, a working example, and trigger guidance.
@@ -100,7 +106,7 @@ Detailed information available in `references/`:
 - `processing.md`: Filtering, tapering, detrending, resampling, instrument response removal, PAZ simulation, and TauP travel times.
 - `io.md`: Local file I/O, FDSN web services, gap handling, and full pipeline pattern.
 
-## Reference Documentation
+## Additional Resources
 
 - Full API: https://docs.obspy.org/packages/index.html
 - Tutorial: https://docs.obspy.org/tutorial/index.html
