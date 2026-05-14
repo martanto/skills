@@ -95,7 +95,7 @@ st.plot()
 - Use `references/trace.md` when working with `UTCDateTime`, `Trace`, or `Stream` attributes and time arithmetic.
 - Use `references/stream.md` for Stream methods, `Inventory`, `Catalog`, or visualization.
 - Use `references/processing.md` for filtering, response removal, resampling, PAZ simulation, or TauP.
-- Use `references/io.md` for local file I/O, FDSN downloads, gap handling, or the full pipeline pattern.
+- Use `references/io.md` for local file I/O, FDSN downloads, gap handling, the full pipeline pattern, or reading from a local SeisComP Data Structure (SDS) archive.
 
 ## Reference Files
 
@@ -104,7 +104,7 @@ Detailed information available in `references/`:
 - `trace.md`: `UTCDateTime`, `Trace`, and `Stream` — core data types and time arithmetic.
 - `stream.md`: Stream methods, `Inventory`, `Catalog`, and visualization.
 - `processing.md`: Filtering, tapering, detrending, resampling, instrument response removal, PAZ simulation, and TauP travel times.
-- `io.md`: Local file I/O, FDSN web services, gap handling, and full pipeline pattern.
+- `io.md`: Local file I/O, FDSN web services, gap handling, full pipeline pattern, and SeisComP Data Structure (SDS) archive access.
 
 ## Additional Resources
 

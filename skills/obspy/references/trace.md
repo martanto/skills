@@ -29,6 +29,12 @@ t2 = t + 3600                 # add seconds → new UTCDateTime
 
 ## How to Use
 
+| Subsection | Description |
+|---|---|
+| [UTCDateTime](#utcdatetime) | Parse, construct, and do arithmetic with ObsPy's universal timestamp type. |
+| [Stream](#stream) | Index, iterate, and select traces from a list-like Stream container. |
+| [Trace](#trace) | Access waveform samples and header fields (network, station, channel, sample rate, times). |
+
 ### UTCDateTime
 
 All ObsPy times are `UTCDateTime`. Never use Python `datetime` for seismic timestamps.

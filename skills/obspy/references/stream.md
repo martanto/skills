@@ -32,6 +32,13 @@ for event in cat:
 
 ## How to Use
 
+| Subsection | Description |
+|---|---|
+| [Stream Methods](#stream-methods) | Reference table of merge, trim, slice, split, copy, write, plot, and select operations. |
+| [Working with Inventories](#working-with-inventories) | Read StationXML, iterate network/station hierarchy, select subsets, and attach response. |
+| [Working with Event Catalogs](#working-with-event-catalogs) | Read QuakeML and access origin time, coordinates, and magnitude for each event. |
+| [Visualization](#visualization) | Plot waveforms, spectrograms, beachballs, and TauP ray paths. |
+
 ### Stream Methods
 
 | Method | Purpose |

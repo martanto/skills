@@ -36,6 +36,15 @@ for arr in arrivals:
 
 ## How to Use
 
+| Subsection | Description |
+|---|---|
+| [Detrending and Tapering](#detrending-and-tapering) | Remove mean, linear trend, and apply cosine tapers before filtering or response removal. |
+| [Filtering](#filtering) | Bandpass, lowpass, and highpass filtering with zero-phase support. |
+| [Resampling](#resampling) | Change sample rate via Fourier resampling or integer decimation. |
+| [Instrument Response Removal](#instrument-response-removal) | Deconvolve instrument response to displacement, velocity, or acceleration. |
+| [Simulation with Poles and Zeros (PAZ)](#simulation-with-poles-and-zeros-paz) | Simulate a target seismometer response using poles-and-zeros dictionaries. |
+| [Travel Times with TauP](#travel-times-with-taup) | Compute theoretical phase arrival times and ray paths with standard Earth models. |
+
 ### Detrending and Tapering
 
 Always detrend and taper **before** filtering or response removal.
