@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.obspy.org)",
+      "Skill(example-skills:skill-creator)"
+    ]
+  },
+  "enabledPlugins": {
+    "example-skills@anthropic-agent-skills": true
+  }
+}
